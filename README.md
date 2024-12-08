@@ -5,13 +5,13 @@ It is implemented using Python to run on command line, and uses rpy2 to run an R
 Normative growth curves (centiles 3, 15, 50, 85, 97) are plotted by sex, tissue, and biomarker, with an option to overlay diseased tissue data points onto the centile curves.
 
 ### Setup Instructions (do this before moving on to Usage step)
-**Install R and Required Packages**:
+**Install R (versioni 4.4.2) and Required Packages**:
    Run the following command:
    ```
    cd tiny-curvy-brains
    python setup/install_r.py
    ```
-This installs R based on your operating system, along with required packages:
+This checks for any existing R versions and installs R version 4.4.2 based on your operating system, along with required packages:
 - ggplot2
 - gamlss
 - dplyr
