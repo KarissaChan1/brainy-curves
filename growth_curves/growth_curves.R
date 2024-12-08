@@ -97,7 +97,7 @@ best_model_object <- get(best_model_name)
 output_file <- paste0(save_path, "/centile_plot_", tissue, "_", sex,"_",column_y, ".png")
 png(filename = output_file, 
     width = 3000,  # Width in pixels
-    height = 2600, # Height in pixels
+    height = 2400, # Height in pixels
     res = 300      # Resolution in DPI
 )
 # Plot the centiles
@@ -121,7 +121,7 @@ print(paste("Centile plot saved as:", output_file))
 output_file_disease <- paste0(save_path, "/centile_plot_", tissue, "_", sex,"_",column_y, "_disease.png")
 png(filename = output_file_disease, 
     width = 3000,  # Width in pixels
-    height = 2600, # Height in pixels
+    height = 2400, # Height in pixels
     res = 300      # Resolution in DPI
 )
 if (exists("disease_tissue") && !is.null(disease_tissue)) {
