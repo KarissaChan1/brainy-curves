@@ -4,9 +4,9 @@ This tool replicates the GAMLSS growth curve construction in the following publi
 It is implemented using Python to run on command line, and uses rpy2 to run an R script for the gamlss package.
 Normative growth curves (centiles 3, 15, 50, 85, 97) are plotted by sex, tissue, and biomarker, with an option to overlay diseased tissue data points onto the centile curves.
 
-### Setup Instructions
+### Setup Instructions (do this before moving on to Usage step)
 **Install R and Required Packages**:
-   Before moving on to the Usage step, run the following command:
+   Run the following command:
    ```
    cd tiny-curvy-brains
    python setup/install_r.py
