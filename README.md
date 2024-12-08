@@ -54,4 +54,4 @@ growth_curves -i ./tests/data/HSC_Normals_Biomarkers_FINAL.xlsx -a Age_yrs_ -b I
 ```
 
 Example output plot:
-![Female WM Intensity growth curve with NAWM overlaid](https://github.com/KarissaChan1/tiny-curvy-brains/blob/main/readme_pics/centile_plot_WM_F_Intensity_disease.png?raw=true)
+![Female WM Intensity growth curve with NAWM overlaid](https://github.com/KarissaChan1/tiny-curvy-brains/blob/main/readme_pics/centile_plot_WM_F_Intensity_disease%20copy.png?raw=true)
