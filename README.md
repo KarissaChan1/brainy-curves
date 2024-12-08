@@ -6,7 +6,7 @@ Normative growth curves (centiles 3, 15, 50, 85, 97) are plotted by sex, tissue,
 
 ### Setup Instructions
 **Install R and Required Packages**:
-   Run the following command:
+   Before moving on to the Usage step, run the following command:
    ```
    cd tiny-curvy-brains
    python setup/install_r.py
