@@ -7,6 +7,9 @@ from rpy2.robjects.packages import importr
 from rpy2.robjects.vectors import ListVector
 import argparse
 import pickle
+from growth_curves.generate_output_report import generate_output_report
+import time
+from datetime import timedelta
 
 # Activate pandas-to-R conversion
 pandas2ri.activate()
@@ -139,6 +142,9 @@ def compute_growth_curves(input_data, save_path, biomarkers, tissue_column, tiss
 
 
 def main():
+    # Start timing
+    start_time = time.time()
+
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--input_path', required=True, dest='input_path',
                         help='Input spreadsheet path and filename')
@@ -186,6 +192,12 @@ def main():
 
     # compute 
     compute_growth_curves(input_data, save_path, biomarkers, tissue_column, tissue_types, sex_column, unique_sex_labels, age_col, disease)
+
+    # Calculate and print runtime
+    end_time = time.time()
+    runtime = end_time - start_time
+        
+    generate_output_report(save_path, disease, runtime)
 
 # Example Usage
 if __name__ == "__main__":

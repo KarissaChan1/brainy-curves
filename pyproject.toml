@@ -10,6 +10,7 @@ python = "^3.10.11"
 rpy2 = "3.5.17"
 pandas = "2.2.3"
 pytest = "^8.3.3"
+reportlab = "^4.2.5"
 
 [tool.poetry.scripts]
 growth_curves = "growth_curves.main:main"

@@ -50,7 +50,7 @@ Example command:
 
 To plot normative growth curves for Intensity, with disease tissue (NAWM and ED) data points overlaid:
 ```
-growth_curves -i ./tests/data/HSC_Normals_Biomarkers_FINAL.xlsx -a Age_yrs_ -b Intensity -s ./tests/test_output/ -d NAWM
+growth_curves -i ./tests/data/HSC_Normals_Biomarkers_FINAL.xlsx -a Age_yrs_ -b Intensity -s ./tests/test_output/ -d NAWM ED
 ```
 
 Example output plot:
